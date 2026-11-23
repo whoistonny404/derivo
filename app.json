@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Derivo",
+    "slug": "derivo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/derivo-icon.png",
+    "scheme": "derivo",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#07111E",
+        "foregroundImage": "./assets/images/derivo-icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.whoistonny.x404.derivo"
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/derivo-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "./plugins/with-android-overlay",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#07111E",
+          "image": "./assets/images/deriv.png",
+          "imageWidth": 180
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
